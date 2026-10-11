@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff4ee">
+    <meta name="description" content="A birthday surprise website with a cake, wishes, music and photo memories.">
+    <title>Happy Birthday, Faria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <header class="topbar">
+      <a class="home-link" href="#gift" aria-label="Go to gift">‹ HOME</a>
+      <button class="icon-button" id="musicToggle" type="button" aria-label="Turn music on">
+        <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="gift">
+        <div class="hero-copy">
+          <p class="eyebrow">Cinematic Gifts</p>
+          <h1>Happy Birthday, Faria!</h1>
+          <p class="lede">A tiny surprise for you, made with old memories, KitKat-code chaos, soft music, and a lot of love.</p>
+          <div class="hero-actions">
+            <button class="primary-button" id="openGift" type="button">Open my gift</button>
+            <a class="secondary-button" href="#memories">See memories</a>
+          </div>
+        </div>
+
+        <div class="phone-preview" aria-label="Birthday preview">
+          <div class="phone-speaker"></div>
+          <div class="phone-screen">
+            <p class="date-pill">October 12</p>
+            <h2>Happy birthday, Faria!</h2>
+            <p class="script">virtual KitKat included</p>
+
+            <div class="cake-stage" aria-hidden="true">
+              <div class="mini-cake-balloons">
+                <b>2</b>
+                <b>4</b>
+              </div>
+              <div class="candle"><span></span><span></span><span></span></div>
+              <div class="cake-top"></div>
+              <div class="cake-body">
+                <span></span>
+                <small></small>
+              </div>
+              <div class="cake-base"></div>
+            </div>
+
+            <div class="mini-photos">
+              <img src="assets/memory-02.jpg" alt="">
+              <img src="assets/memory-05.jpg" alt="">
+              <img src="assets/memory-06.jpg" alt="">
+            </div>
+
+            <button class="phone-button" id="phoneOpen" type="button">Open my gift</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="cinematic-stage" id="party">
+        <div class="stage-phone">
+          <div class="stage-topline">
+            <span>Birthday Party</span>
+            <span>12 Oct</span>
+          </div>
+          <div class="stage-copy">
+            <p class="eyebrow">For You</p>
+            <h2>Open the surprise</h2>
+            <p>A little homemade birthday moment, with the letter, memories, wishes, and song waiting inside.</p>
+          </div>
+          <button class="big-cake" id="cakeOpener" type="button" aria-label="Open birthday cake surprise">
+            <span class="cake-balloons" aria-hidden="true">
+              <b>2</b>
+              <b>4</b>
+            </span>
+            <span class="cake-blast" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </span>
+            <span class="cake-sparkles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="cake-lid">
+              <i></i><i></i><i></i>
+            </span>
+            <span class="cake-cream"></span>
+            <span class="cake-layer">
+              <em></em>
+              <small></small>
+            </span>
+            <span class="cake-plate"></span>
+          </button>
+          <div class="unlock-tray" aria-label="Unlocked birthday surprises">
+            <a href="#letter">Letter</a>
+            <a href="#love">Prizes</a>
+            <a href="#dreams">Stars</a>
+            <a href="#memories">Photos</a>
+            <a href="#song">Song</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="gift-panel" id="surprises" aria-label="Birthday surprises">
+        <div class="panel-heading">
+          <p class="eyebrow">Birthday Party</p>
+          <h2>A birthday cake opens a party of surprises</h2>
+          <p>Open the wish, flip through the photo booth, and keep the little birthday feeling close.</p>
+        </div>
+
+        <div class="surprise-grid">
+          <button class="surprise-card" type="button" data-target="letter">
+            <span class="card-icon">✉</span>
+            <strong>Letter</strong>
+            <small>Birthday wish</small>
+          </button>
+          <button class="surprise-card" type="button" data-target="love">
+            <span class="card-icon">⌁</span>
+            <strong>Prizes</strong>
+            <small>What I love</small>
+          </button>
+          <button class="surprise-card" type="button" data-target="dreams">
+            <span class="card-icon">✦</span>
+            <strong>Stars</strong>
+            <small>Wishes and dreams</small>
+          </button>
+          <button class="surprise-card" type="button" data-target="memories">
+            <span class="card-icon">▣</span>
+            <strong>Photos</strong>
+            <small>7 saved memories</small>
+          </button>
+          <button class="surprise-card" type="button" data-target="song">
+            <span class="card-icon">♪</span>
+            <strong>Song</strong>
+            <small>Birthday soundtrack</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="letter-section" id="letter">
+        <div class="letter">
+          <p class="eyebrow">Wish Part</p>
+          <h2>Happy Birthday, Faria! 🍫</h2>
+          <p id="wishText">Looking back at how far we've come, from our school and college days worrying about where life would take us, to finally ending up as university roommates, it feels surreal that we've shared so many years of our lives together.</p>
+          <p>Even though graduation brought us back home and things are different now, some things never change. I'm keeping our official birthday code alive today, consider this a virtual KitKat for old time's sake!</p>
+          <p>Wishing you the happiest birthday and all the success, peace, and joy in this next chapter. Have a wonderful day!</p>
+        </div>
+      </section>
+
+      <section class="love-machine" id="love">
+        <div class="panel-heading">
+          <p class="eyebrow">Tiny Notes</p>
+          <h2>Little things about you</h2>
+        </div>
+        <div class="machine-shell">
+          <div class="prize-bin">
+            <span>Your effortless ability to laugh at yourself</span>
+            <span>Your chaotic energy that keeps life exciting</span>
+            <span>Your unbothered attitude when things get messy</span>
+            <span>Your genuine and unpretentious nature</span>
+            <span>Your cute clumsiness that makes everyday moments memorable</span>
+            <span>Your playful spirit that brings out the fun in everything</span>
+            <span>Your unique quirks that make you entirely yourself</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="wish-jar" id="dreams">
+        <div class="jar-copy">
+          <p class="eyebrow">Wishes · Dreams</p>
+          <h2>Little stars for your new year</h2>
+          <p>Tiny wishes, kept here softly for your next chapter.</p>
+        </div>
+        <div class="stars-list">
+          <p>May our 12 AM "podcasts" continue unraveling the world's most absurd and hilarious conspiracy theories and completely useless debates.</p>
+          <p>May Rufaida's regular biryani orders always arrive hot, loaded with maximum flavor, with leg piece and beshi kore lebu every single time.</p>
+          <p>May your dream of moving abroad come true and may you live your dream life.</p>
+          <p>May we never let misunderstandings steal months away from us ever again.</p>
+        </div>
+      </section>
+
+      <section class="memories" id="memories">
+        <div class="panel-heading">
+          <p class="eyebrow">Photo Booth</p>
+          <h2>Memories in motion</h2>
+        </div>
+
+        <div class="gallery">
+          <button class="gallery-nav" id="prevPhoto" type="button" aria-label="Previous photo">‹</button>
+          <figure class="photo-frame">
+            <img id="mainPhoto" src="assets/memory-02.jpg" alt="Birthday memory">
+            <figcaption id="photoCaption">With my constant.</figcaption>
+          </figure>
+          <button class="gallery-nav" id="nextPhoto" type="button" aria-label="Next photo">›</button>
+        </div>
+
+        <div class="thumbs" id="thumbs" aria-label="Choose a memory"></div>
+      </section>
+
+      <section class="music-section" id="song">
+        <div class="panel-heading">
+          <p class="eyebrow">Song</p>
+          <h2>A little song for you</h2>
+          <p>This song is for you, soft, happy, and a little nostalgic, just like the memories here.</p>
+        </div>
+        <div class="song-card">
+          <iframe
+            src="https://www.youtube.com/embed/IWd9ZrzcvtE"
+            title="Birthday song preview"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+          <a class="primary-button" href="https://www.youtube.com/watch?v=IWd9ZrzcvtE" target="_blank" rel="noreferrer">Open song</a>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="gift-modal" id="giftModal">
+      <button class="close-button" id="closeModal" type="button" aria-label="Close">×</button>
+      <p class="eyebrow">Surprise Unlocked</p>
+      <h2>Happy birthday, Faria!</h2>
+      <p>The cake is open. Your virtual KitKat, letter, prizes, wishes, music and memories are all waiting.</p>
+      <a class="primary-button modal-link" href="#letter">Read the wish</a>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
